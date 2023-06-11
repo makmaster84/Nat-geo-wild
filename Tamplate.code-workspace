@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Tamplate",
+			"path": "../../../../Git/Projects/Tamplate"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
