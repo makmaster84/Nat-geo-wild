@@ -66,7 +66,6 @@ img {
 }
 
 .navigation__item {
-    
 }
 
 .navigation__link {
@@ -74,7 +73,12 @@ img {
     font-weight: 500;
     text-decoration: none;
     color: #fff;
-    
+    transition: color .15s ease-in;
+}
+
+.navigation__link:hover,
+.navigation__link:focus  {
+    color: #406343;
 }
 
 .navigation__link--current {
@@ -130,17 +134,85 @@ img {
     position: relative;
 }
 .promo__image {
+    width: 100%;
+    display: block;
 }
+
 .promo__text-lion {
+    position: absolute;
+    top: 408px;
+    left: 399px;
+    transition: transform .3s ease-in;
 }
+
+.promo__text-lion:hover {
+    transform: scale(0.95);
+}
+
 .promo__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 13px 0;
+    width: 380px;
+    align-items: center;
+    position: absolute;
+    bottom: 189px;
+    left: 50%;
+    margin-left: -190px;
 }
+
 .promo__scroll {
+    width: 69px;
+    height: 69px;
+    background-image: url("../image/mous-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
 .button {
+    width: 380px;
+    height: 80px;
+    border: none;
+    border-radius: 20px;
+    background-color: #406343;
+    box-shadow: -25px 0px 50px rgba(0, 0, 0, 0.1), 25px -25px 50px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    padding: 22px 47px 20px;
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 700;
+    color: inherit;
+    cursor: pointer;
 }
+
+.button svg {
+    fill: #fff;
+}
+
 .promo__text {
+    position: absolute;
+    top: 674px;
+    right: 147px;
+    width: 429px;
 }
+
+.promo__text h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.promo__text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(179, 179, 179, 0.8);
+    margin-top: 0;
+
+}
+
 /*
 font-family: 'Poppins', sans-serif;
 */
