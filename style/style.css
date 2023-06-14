@@ -146,6 +146,7 @@ img {
     bottom: 189px;
     left: 50%;
     margin-left: -190px;
+    transition: transform .3s ease-in;
 }
 
 .promo__scroll {
@@ -176,6 +177,10 @@ img {
 
 .button svg {
     fill: #fff;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
 
 .promo__text {
